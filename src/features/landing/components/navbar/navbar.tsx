@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 
-import { Icon } from '@/components/ui/icon/icon';
 import { useUser } from '@/lib/auth';
 
 import { buttonVariants } from '../../../../components/ui/button';
@@ -19,7 +18,11 @@ const Navbar = () => {
             <div className="flex h-16 items-center">
               <div className="ml-4 flex lg:ml-0">
                 <Link to="/">
-                  <Icon.logo className="size-12" />
+                  {/* <Icon.logo className="size-20" /> */}
+                  {/* <img src="/kocokeeper.JPEG" alt="logo" width="70" /> */}
+                  <span className="text-xl font-bold text-green-700">
+                    KocoKeeper
+                  </span>
                 </Link>
               </div>
 
