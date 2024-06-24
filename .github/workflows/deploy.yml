@@ -22,22 +22,13 @@ jobs:
       
       - name: Store variables
         run: |
-          echo ${{ secrets.VITE_APP_API_URL }}
           echo "VITE_APP_API_URL=${{ secrets.VITE_APP_API_URL }}"
-          echo ${{ secrets.VITE_APP_ENABLE_API_MOCKING }}
           echo "VITE_APP_ENABLE_API_MOCKING=${{ secrets.VITE_APP_ENABLE_API_MOCKING }}"
-          echo ${{ secrets.VITE_APP_MOCK_API_PORT }}
           echo "VITE_APP_MOCK_API_PORT=${{ secrets.VITE_APP_MOCK_API_PORT }}"
-          echo ${{ secrets.VITE_APP_URL }}
           echo "VITE_APP_URL=${{ secrets.VITE_APP_URL }}"
 
       - name: Build project
         run: npm run build
-        # env: 
-        #   VITE_APP_API_URL: ${{ secrets.VITE_APP_API_URL }}
-        #   VITE_APP_ENABLE_API_MOCKING: ${{ secrets.VITE_APP_ENABLE_API_MOCKING }}
-        #   VITE_APP_MOCK_API_PORT: ${{ secrets.VITE_APP_MOCK_API_PORT }}
-        #   VITE_APP_URL: ${{ secrets.VITE_APP_URL }}    
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
