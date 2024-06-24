@@ -2,19 +2,21 @@ import React from 'react';
 
 import Benefits from './benefits';
 import Footer from './footer';
-import Header from './header';
 import Hero from './hero';
+import Navbar from './navbar/navbar';
 import Pricing from './pricing';
 import Services from './services';
 
 const Landing = () => {
   return (
-    <div className="">
-      <Header />
-      <Hero />
-      <Benefits />
-      <Services />
-      <Pricing />
+    <div>
+      <Navbar />
+      <div className="flex-1 grow">
+        <Hero />
+        <Benefits />
+        <Services />
+        <Pricing />
+      </div>
       <Footer />
     </div>
   );
