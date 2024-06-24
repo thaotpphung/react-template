@@ -11,7 +11,9 @@ if (!root) throw new Error('No root element found');
 enableMocking().then(() => {
   createRoot(root).render(
     <React.StrictMode>
-      <App />
+      <div className="relative flex min-h-screen flex-col">
+        <App />
+      </div>
     </React.StrictMode>,
   );
 });

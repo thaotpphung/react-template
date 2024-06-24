@@ -1,34 +1,62 @@
-export const navigation = [
+import {
+  Utensils,
+  CookingPot,
+  HeartPulse,
+  ShoppingCart,
+  SquareCheckBig,
+  CalendarDays,
+} from 'lucide-react';
+
+export type Navigation = (typeof NAVIGATIONS)[number];
+export const NAVIGATIONS = [
   {
     id: '0',
-    title: 'Features',
-    url: '#features',
+    title: 'Overview',
+    url: '#overview',
   },
   {
     id: '1',
     title: 'Pricing',
     url: '#pricing',
   },
+];
+
+export type Benefit = (typeof BENEFITS)[number];
+export const BENEFITS = [
+  {
+    id: '0',
+    title: 'Meal Planning & Customization',
+    text: 'Plan and customize meals tailored to your family’s dietary preferences.',
+    icon: Utensils,
+  },
+  {
+    id: '1',
+    title: 'Recipe Management',
+    text: 'Discover, save, and organize recipes to simplify your meal preparation.',
+    icon: CookingPot,
+  },
   {
     id: '2',
-    title: 'How to use',
-    url: '#how-to-use',
+    title: 'Health and Fitness Tracking',
+    text: 'Track and achieve your family’s health and fitness goals effortlessly.',
+    icon: HeartPulse,
   },
   {
     id: '3',
-    title: 'Roadmap',
-    url: '#roadmap',
+    title: 'Shopping List Collaboration',
+    text: 'Create and share grocery lists to streamline your family’s shopping.',
+    icon: ShoppingCart,
   },
   {
     id: '4',
-    title: 'New account',
-    url: '#signup',
-    onlyMobile: true,
+    title: 'Task and To-Do Lists',
+    text: 'Stay organized with easy-to-manage tasks and to-do lists for the whole family.',
+    icon: SquareCheckBig,
   },
   {
     id: '5',
-    title: 'Sign in',
-    url: '#login',
-    onlyMobile: true,
+    title: 'Family Calendar and Scheduling',
+    text: 'Synchronize your family’s schedules and never miss an important event.',
+    icon: CalendarDays,
   },
 ];
