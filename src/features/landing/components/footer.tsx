@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col items-start gap-4">
           <Link to="/" className="flex items-center gap-2">
             <HeartIcon className="size-6 text-primary" />
-            <span className="text-xl font-bold">Family Planning</span>
+            <span className="text-xl font-bold">KocoKeeper</span>
           </Link>
           <p className="max-w-[300px] text-muted-foreground">
             Manage your family&apos;s health, tasks, schedules, shopping, meals,
@@ -43,7 +43,7 @@ const Footer = () => {
       </div>
       <div className="container mt-8 flex max-w-7xl items-center justify-between">
         <p className="text-xs text-muted-foreground">
-          &copy; 2024 Family Planning. All rights reserved.
+          &copy; 2024 KocoKeeper. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <Link to="/" className="text-xs hover:underline">
